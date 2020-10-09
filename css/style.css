@@ -23,24 +23,68 @@ header{
 #buttons{
 margin:5vh;
 }
+button::after{
+    background-color: transparent;
+}
 li{
     list-style: decimal;
     font-size: 2em;
+    background-color: rgba(0, 255, 255, .1);
+    margin-bottom: 1vh;
 }
 @media only screen and (max-width: 768px){
     header{
         padding: 2%;
         margin-bottom: 5vh;
     }
+    h2{
+        font-size: 1.2em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    #input_button_clear{
+        display:flex !important;
+        justify-content: center;   
+    }
     #input{
-      font-size: 1.5em;
+      font-size: 1.3em;
       width: 80%;
+    }
+    #clear{
+        font-size: .9;
+        width: 15%;
+        height: 40px;
+         display:flex !important;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1vh;
     }
     #buttons{
     margin:4vh;
     }
+    #buttons button{
+     width: 100%;
+    }
     li{
         list-style: decimal;
-        font-size: 1.3em;
+        font-size: 1.1em;
+    }
+    #app{
+        text-align: left;
+        margin:2vh;
+        display:block !important;
+        justify-content: center;
+        flex-direction: row;
+    }
+    #app .btn-outline-danger{
+        font-size: .8em;
+        width: 5%;
+        margin-left: 3vh;
+    }
+    .fa-trash-alt{
+      display:flex !important;
+      justify-content: center;
+     
     }
 }

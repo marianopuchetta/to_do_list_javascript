@@ -5,7 +5,7 @@ var tasks = [];
 const mostrar = () => {
     app.innerHTML = '';
     for (var task in tasks) {
-        html = `<li>${tasks[task]} <button id="${task}" class="btn btn-outline-danger" value="${task}" onclick="deleteTask(this)">Delete</button></li>`
+        html = `<li>${tasks[task]} <button id="${task}" class="btn btn-outline-danger" value="${task}" onclick="deleteTask(this)"><i class="fa fa-trash-alt"></i></button></li>`
         app.innerHTML += html;
     }
 }
