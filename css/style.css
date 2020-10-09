@@ -23,7 +23,7 @@ header{
 #buttons{
 margin:5vh;
 }
-button::after{
+.btn-outline-success:active{
     background-color: transparent;
 }
 li{
@@ -36,9 +36,6 @@ li{
     header{
         padding: 2%;
         margin-bottom: 5vh;
-    }
-    h2{
-        font-size: 1.2em;
     }
     h3{
         font-size: 1em;
